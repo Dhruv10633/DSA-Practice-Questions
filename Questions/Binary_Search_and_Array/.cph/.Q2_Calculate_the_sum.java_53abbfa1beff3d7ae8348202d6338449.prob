@@ -1,0 +1,1 @@
+{"name":"Local: Q2_Calculate_the_sum","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\2. Binary Search\\Q2_Calculate_the_sum.java","tests":[{"id":1668587163237,"input":"5\n1 2 3 4 5\n2\n1\n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\2. Binary Search\\Q2_Calculate_the_sum.java","group":"local","local":true}

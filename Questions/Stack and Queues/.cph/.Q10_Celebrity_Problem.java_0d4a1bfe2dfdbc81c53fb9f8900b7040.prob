@@ -1,0 +1,1 @@
+{"name":"Local: Q10_Celebrity_Problem","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1_Stack\\Q10_Celebrity_Problem.java","tests":[{"id":1669616405784,"input":"4\n0 0 1 0\n0 0 1 0\n0 0 0 0\n0 0 1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1_Stack\\Q10_Celebrity_Problem.java","group":"local","local":true}

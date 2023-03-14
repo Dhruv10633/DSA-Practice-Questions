@@ -1,0 +1,1 @@
+{"name":"Local: Q10_Array_Partition","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Arrays\\Q10_Array_Partition.java","tests":[{"id":1669990667042,"input":"6\n6 6 2 1 2 5","output":"9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Arrays\\Q10_Array_Partition.java","group":"local","local":true}

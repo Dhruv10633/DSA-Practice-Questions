@@ -1,0 +1,1 @@
+{"name":"Local: Q9_Get_the_max_score","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Arrays\\Q9_Get_the_max_score.java","tests":[{"id":1669819012126,"input":"5\n2 4 5 8 10\n4\n4 6 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Arrays\\Q9_Get_the_max_score.java","group":"local","local":true}

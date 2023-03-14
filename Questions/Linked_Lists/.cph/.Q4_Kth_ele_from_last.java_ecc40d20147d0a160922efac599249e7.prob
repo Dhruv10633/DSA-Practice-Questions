@@ -1,0 +1,1 @@
+{"name":"Local: Q4_Kth_ele_from_last","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Linked_Lists\\Q4_Kth_ele_from_last.java","tests":[{"id":1669825902649,"input":"1 2 3 4 5 6 -1\n3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\Linked_Lists\\Q4_Kth_ele_from_last.java","group":"local","local":true}

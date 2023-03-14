@@ -1,0 +1,1 @@
+{"name":"Local: Q2_Next_Greater_Element","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1. Stack\\Q2_Next_Greater_Element.java","tests":[{"id":1667978937772,"input":"8\n73 74 75 71 69 72 76 73","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1. Stack\\Q2_Next_Greater_Element.java","group":"local","local":true}

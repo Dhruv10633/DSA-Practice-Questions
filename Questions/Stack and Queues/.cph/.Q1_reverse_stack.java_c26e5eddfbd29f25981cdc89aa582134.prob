@@ -1,0 +1,1 @@
+{"name":"Local: Q1_reverse_stack","url":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1. Stack\\Q1_reverse_stack.java","tests":[{"id":1667534265702,"input":"5\n1\n2\n3\n4\n5","output":"1\n2\n3\n4\n5\n\n1\n2\n3\n4\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Questions\\1. Stack\\Q1_reverse_stack.java","group":"local","local":true}

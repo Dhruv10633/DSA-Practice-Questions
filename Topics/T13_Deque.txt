@@ -1,0 +1,25 @@
+deque.offerLast(80)  --> deque = [80]
+deque.offerLast(61)  --> deque = [80, 61]
+deque.offerLast(63)  --> deque = [80, 61, 63]
+deque.offerFirst(30) --> deque = [30, 80, 61, 63]
+deque.offerLast(11)  --> deque = [30, 80, 61, 63, 11]
+deque.offerLast(33)  --> deque = [30, 80, 61, 63, 11, 33]
+deque.offerLast(30)  --> deque = [30, 80, 61, 63, 11, 33, 30]
+deque.offerFirst(90) --> deque = [90, 30, 80, 61, 63, 11, 33, 30]
+
+deque.isEmpty()   = false
+deque.peekFirst() = 90
+deque.peekLast()  = 30
+
+deque.pollFirst() = 90 --> deque = [30, 80, 61, 63, 11, 33, 30]
+deque.pollFirst() = 30 --> deque = [80, 61, 63, 11, 33, 30]
+deque.pollFirst() = 80 --> deque = [61, 63, 11, 33, 30]
+deque.pollFirst() = 61 --> deque = [63, 11, 33, 30]
+deque.pollLast()  = 30 --> deque = [63, 11, 33]
+deque.pollLast()  = 33 --> deque = [63, 11]
+deque.pollLast()  = 11 --> deque = [63]
+deque.pollFirst() = 63 --> deque = []
+
+deque.isEmpty()   = true
+deque.peekFirst() = null
+deque.peekLast()  = null

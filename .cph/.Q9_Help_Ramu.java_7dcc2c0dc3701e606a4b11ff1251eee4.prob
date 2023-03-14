@@ -1,0 +1,1 @@
+{"name":"Local: Q9_Help_Ramu","url":"d:\\IMP Docs\\Sem 5\\DAA\\Q9_Help_Ramu.java","tests":[{"id":1668671459872,"input":"2\n1 3 7 19\n2 3\n2 5\n4 4 4\n4 3 2 1\n1 3\n798\n1 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\IMP Docs\\Sem 5\\DAA\\Q9_Help_Ramu.java","group":"local","local":true}
