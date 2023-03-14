@@ -5,6 +5,7 @@ bool is_palin(string s){
     if(s.empty()) return false;
     for(int i=0, j=s.size()-1 ;i<j;i++,j--){
         if(s[i]!=s[j]){
+             
             return false;
         }
     }
