@@ -19,6 +19,7 @@ class Trie {
     public void insert(String word) {
         Node w = root;
 
+        //a loop till word length we keep on adding the string char to
         for(int i=0; i<word.length(); i++){
             int index = word.charAt(i) - 'a';
             
@@ -43,6 +44,8 @@ class Trie {
 
             w = w.child[index];
         }
+
+        //to check if the word found is actuaaly a complete word and it ends here
         return w.isEnd;
     }
     
@@ -57,6 +60,8 @@ class Trie {
             }
             w = w.child[index];
         }
+
+        //similar to above but no need to check if the the prefix ends there
         return true;
     }
 }
