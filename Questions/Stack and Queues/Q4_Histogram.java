@@ -1,6 +1,56 @@
-// https://www.tutorialspoint.com/number-of-valid-largestHistograms-in-cplusplus#:~:text=So%2C%20if%20the%20input%20is,2%2C5%2C3%5D.
+// https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 
 import java.util.*;
+
+class Solution {
+    public int largestRectangleArea(int[] ht) {
+        //a 2 len arr for each bar denoting the leftmost position and the height index in the height array
+        Stack<Integer> index=new Stack<>();
+
+        int maxArea=0;
+
+        for(int i=0 ; i<ht.length ; i++){
+
+            //if our curr bar smaller than the topmost stack bar
+            while(!index.isEmpty() && ht[index.peek()] > ht[i] ){   
+                int x = index.pop();
+                int height = ht[x];
+                int l;
+                if(index.isEmpty()){
+                    l=-1;
+                }
+                else{
+                    l=index.peek();
+                }
+
+                int width = i-l-1;
+
+                // System.out.println(height + " "+ width);
+                maxArea = Math.max(maxArea, height*width);
+            }
+            
+            index.push(i);
+        }
+
+        while(!index.isEmpty()){   
+            int x = index.pop();
+            int height = ht[x];
+            int l;
+            if(index.isEmpty()){
+                l=-1;
+            }
+            else{
+                l=index.peek();
+            }
+
+            int width = ht.length-l-1;
+
+            maxArea = Math.max(maxArea, height*width);
+        }
+        
+        return maxArea;
+    }
+}
 
 public class Q4_Histogram {
 
@@ -56,41 +106,5 @@ public class Q4_Histogram {
     }
 
 
-    public static void largestHistogramsEff(int[] arr,int n){
-
-        Stack<Integer> st=new Stack<>();
-        int max_area=0;
-        for(int i=0;i<n;i++){
-            while(!st.empty() && arr[st.peek()]>=arr[i]){
-                st.pop();
-            }
-            int r;
-            if(st.empty()){
-                r=n;
-            }
-            else{
-                r=i;
-            }
-
-            max_area=Math.max(max_area , arr[i]*(r));
-            st.push(i);
-
-
-        }
-        System.out.println(max_area);
-        
-    }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int[] arr=new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-        }
-        sc.close();
-
-        // largestHistograms(arr,n);
-        largestHistogramsEff(arr,n);
-
-    }
 }
+
