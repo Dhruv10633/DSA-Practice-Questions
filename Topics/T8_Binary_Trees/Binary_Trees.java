@@ -55,7 +55,7 @@ public class Binary_Trees {
             return true;
         }
 
-        // we do this in stead of writing find (root.left,x) nad the other in diff erent lines
+        // we do this in stead of writing find (root.left,x) and the other in different lines
         // so that if we find the x in the left part it doesn'y execute the right part;
         return find(root.left,x) || find(root.right ,x);
     }
