@@ -1,4 +1,4 @@
-//// https://leetcode.com/problems/naming-a-company/description/
+// https://leetcode.com/problems/naming-a-company/description/
 package Arrays_Strings;
 import java.util.*;
 
