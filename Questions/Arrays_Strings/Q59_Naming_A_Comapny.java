@@ -1,5 +1,5 @@
 //// https://leetcode.com/problems/naming-a-company/description/
-package Questions.Arrays_Strings;
+package Arrays_Strings;
 import java.util.*;
 
 class Solution {
