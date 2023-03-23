@@ -16,7 +16,7 @@ public class BST {
 
     //Creating BST
     public void createTree(int[] arr){
-        this.root=createTree(arr, 0, arr.length-1)
+        this.root=createTree(arr, 0, arr.length-1);
     }
 
     public Node createTree(int[] arr,int s,int e){
