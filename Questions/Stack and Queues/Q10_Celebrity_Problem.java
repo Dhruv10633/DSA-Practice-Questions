@@ -22,6 +22,11 @@ public class Q10_Celebrity_Problem {
             else if(arr[a][b]==0 && arr[b][a]==1){
                 poss.push(a);
             }
+            // if they both don't know each other then no celeb
+            else{
+                System.out.println(-1);
+                return;
+            }
 
             // cout<<"  a-"<<poss.size()<<endl;   
         }
