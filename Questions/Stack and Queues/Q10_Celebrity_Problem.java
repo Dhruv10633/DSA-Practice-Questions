@@ -35,14 +35,12 @@ public class Q10_Celebrity_Problem {
         for(int j=0 ; j<n ; j++){
             // checking row wise if everyone knows him except himself (cause that's always 0 for everyone)
             if(arr[j][poss.peek()]==0 && j!=poss.peek()){
-                poss.pop();
                 System.out.println("No Celebrity");
                 return;
             }
 
             //checking column wise if he knows anyone
             if(arr[poss.peek()][j]==1){
-                poss.pop();
                 System.out.println("No Celebrity");
                 return;
             }
