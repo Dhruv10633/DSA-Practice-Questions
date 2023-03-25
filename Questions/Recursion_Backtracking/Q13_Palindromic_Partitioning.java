@@ -4,10 +4,10 @@ import java.util.*;
 
 class Solution {
     public List<List<String>> partition(String s) {
-        return palin(s, new ArrayList<String>(), new HashSet<String>());
+        return palin(s, new ArrayList<String>());
     }
 
-    private List<List<String>> palin(String s, List<String> li, HashSet<String> set) {
+    private List<List<String>> palin(String s, List<String> li) {
         List<List<String>> ans = new ArrayList<>();
         
         if(s.length()==0){
@@ -19,10 +19,9 @@ class Solution {
         for(int i=1 ; i<=s.length() ; i++){
             String str = s.substring(0,i);
 
-            if(set.contains(str) || isPalin(str)){
+            if(isPalin(str)){
                 li.add(str);
-                set.add(str);
-                List<List<String>> temp = palin(s.substring(i), li, set);
+                List<List<String>> temp = palin(s.substring(i), li);
                 // System.out.println(temp);
                 for(List<String> t:temp){
                     ans.add(t);
