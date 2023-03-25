@@ -12,7 +12,12 @@ public class Q4_Path_Sum_III {
     //     }
 
     //     //similar to n^2 2 for loops 1 ,i from 0 to n ,2 ,then 1 to n ,just here we have left and right instead of i+1
-    //     return checkS(root,(long)targSum) + pathSum(root.left,targSum) + pathSum(root.right,targSum);
+    //     int ans = checkS(root,targSum);
+        
+    //     ans += pathSum(root.left,targSum);
+    //     ans += pathSum(root.right,targSum);
+
+    //     return ans;
     // }
 
     // //returns the possible routed with targ sum
