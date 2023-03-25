@@ -2,7 +2,7 @@
 package Binary_Trees;
 import java.util.*;
 
-public class Q3_Path_Sum_II {
+class Solution {
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<Integer> li=new ArrayList<>();
@@ -27,21 +27,19 @@ public class Q3_Path_Sum_II {
                 ans.add(f_li);      
             }
 
-            //this is is imp as for the leaf nodes we never reach null and return here back to the root node
-            //and thus the leaf nodes never get removed as it never reaches the li.remove() at line 35(or the 2nd last line) 
-            //so we need to manually do that here
+            //this is imp as for the leaf nodes we never reach null and return here back to the root node
+            //so it never reaches the li.remove() at line 35(or the 2nd last line) so we need to manually do that here
             li.remove(li.size()-1);
             return ans;
         }
         
-
         pathSum(root.left,targ,li,ans);
         pathSum(root.right,targ,li,ans);
         
+        //we remove after checking on both sides of nodes
         li.remove(li.size()-1);
 
         return ans;
         
     }
-    
 }
