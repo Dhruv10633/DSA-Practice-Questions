@@ -1,40 +1,41 @@
 // https://leetcode.com/problems/combination-sum-ii/
 package Recursion_Backtracking;
-
 import java.util.*;
+
 class Solution {
     public List<List<Integer>> combinationSum2(int[] cand, int targ) {
         List<List<Integer>> ans=new ArrayList<>();
 
         //we want the all combinations to be ascending
         Arrays.sort(cand);
-        comb(cand,targ,ans,new ArrayList<Integer>(),0);
+        comb(cand,0,targ,ans,new ArrayList<Integer>(), false);
     
         return ans;
     }
 
     //Pick-Not-Pick
-    private void comb(int[] cand, int targ,List<List<Integer>> ans,List<Integer> poss,int i){
-        //this cond filas if the last element itself == target
-        // if(i==cand.length){
-        //     return;
-        // }
-
+    private void comb(int[] cand, int j, int targ,List<List<Integer>> ans,List<Integer> poss, boolean flag){
+        
         if(targ==0){
             ans.add(new ArrayList<>(poss));
             return;
         }
-
-        for(int j=i;j<cand.length;j++){  
-            //if we take 2 loops then it works for the internal loop every time but not for the main one or the 1st time the loop exectues
-            if((j>i) && cand[j]==cand[j-1]) continue; 
-
-            if(targ>=cand[j]){
-                poss.add(cand[j]);
-                comb(cand,targ-cand[j],ans,poss,j+1);
-                poss.remove(poss.size()-1);
-            }
-            
+        if(j==cand.length){
+            return;
         }
+        
+        // To Avoid Repetion
+        if(flag && cand[j]==cand[j-1]) {
+            comb(cand,j+1,targ,ans,poss, true);
+            return;
+        }
+
+        if(targ>=cand[j]){
+            poss.add(cand[j]);
+            comb(cand,j+1,targ-cand[j],ans,poss, false);
+            poss.remove(poss.size()-1);
+        }
+
+        comb(cand,j+1,targ,ans,poss, true);
     }
 }
