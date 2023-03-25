@@ -23,12 +23,14 @@ class Solution {
             return ;
         }
 
-        for(int i=x ; i<nums.length ; i++){
-            if(li.isEmpty() || li.get(li.size()-1) <= nums[i]){
-                li.add(nums[i]);
-                subSeq(nums, i+1, li, set);
-                li.remove(li.size()-1);
-            }
+        //Pick
+        if(li.isEmpty() || li.get(li.size()-1) <= nums[x]){
+            li.add(nums[x]);
+            subSeq(nums, x+1, li, set);
+            li.remove(li.size()-1);
         }
+
+        //Not Pick
+        subSeq(nums, x+1, li, set);
     }
 }
