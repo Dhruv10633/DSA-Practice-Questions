@@ -72,7 +72,7 @@ class minHeap{
 
     private void upHeapify(int c){
 
-        //P=(C-1)/2;  to find out parent if we know child index
+        //P=(C-1)/2;  to find out parent if we know child index  // when index starts from then P = C/2
         int p=(c-1)/2;
 
         //no parent above
