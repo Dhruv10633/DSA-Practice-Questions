@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/palindrome-partitioning/solutions/
+//https://leetcode.com/problems/palindrome-partitioning/
 package Recursion_Backtracking;
 import java.util.*;
 

@@ -12,6 +12,7 @@ import java.util.*;
 		} else {
 			System.out.println("No");
 		}
+		s.close();
 
 	}
 
