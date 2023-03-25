@@ -23,7 +23,6 @@ class Main {
             if((temp.left!=null && temp.left.data==target) || (temp.right!=null && temp.right.data==target)){
                 found=1;
             }
-
             else{
                 if(temp.left!=null){
                     q.add(temp.left);
