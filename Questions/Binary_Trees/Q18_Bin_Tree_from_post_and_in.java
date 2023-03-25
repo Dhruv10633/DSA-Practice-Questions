@@ -1,7 +1,6 @@
 //https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 package Binary_Trees;
 
-
 class Solution {
 
     public TreeNode buildTree(int[] in, int[] post) {
@@ -23,8 +22,8 @@ class Solution {
         }
         int l=index-ilo;
 
-        root.left=construct(post ,plo ,plo+l-1 ,in ,ilo ,index-1);
-        root.right=construct(post ,plo+l ,phi-1 ,in ,index+1 ,ihi);
+        root.left=construct(post ,plo ,plo+l-1 ,in ,ilo ,index-1);   //Left
+        root.right=construct(post ,plo+l ,phi-1 ,in ,index+1 ,ihi);  //Right
         return root;
     }
 }

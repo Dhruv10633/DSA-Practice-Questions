@@ -20,7 +20,6 @@ class Main{
 		}
 
 		private Node root;
-		private int size;
 
 		public ArrayList<ArrayList<Integer>> levelArrayList() {
 
