@@ -22,7 +22,7 @@ class Solution {
 
         for(int i=0;i<path.size() && k-i>=0 ;i++){
             //From each node in the path we check if there is any node at k dist from targ node
-            nodesAtK(path.get(i),k-i, (i-1>=0)? path.get(i-1):null ,ans);
+            nodesAtK(path.get(i), k-i, (i-1>=0)? path.get(i-1):null, ans);
         }
 
         return ans;
