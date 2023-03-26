@@ -60,8 +60,8 @@ class Solution {
             ans.add(node.val);
             return;
         }
-        k--;
-        nodesAtK(node.left,k,checked,ans);
-        nodesAtK(node.right,k,checked,ans);
+        
+        nodesAtK(node.left,k-1,checked,ans);
+        nodesAtK(node.right,k-1,checked,ans);
     }
 }
