@@ -167,7 +167,7 @@ class Graph{
         return false;
     }
 
-    //DFS iterative - just replace queue with stack
+    //DFS(search) iterative - just replace queue with stack
     public boolean hasPathDFS_iter(int src, int dest) {
         HashSet<Integer> vis = new HashSet<>();
         Stack<Integer> st = new Stack<>();
