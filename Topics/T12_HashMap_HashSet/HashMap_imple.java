@@ -114,9 +114,7 @@ class hMap <K,V>{
     }
     public void rehashing(){
         ArrayList<Node> newBucket=new ArrayList<>();
-        for(int i=0;i<bucket.size()*2;i++){
-            newBucket.add(null);
-        }
+        
 
         //this step is imp as the below put method in the loop works only in the bucket arraylist
         ArrayList<Node> temp=this.bucket;
