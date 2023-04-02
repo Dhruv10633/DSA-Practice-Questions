@@ -40,9 +40,9 @@ class Solution1 {
 
 class Solution2 {
     public String decodeString(String s) {
-        String res = "";
+        StringBuilder res = new StringBuilder();
         Stack<Integer> countStack = new Stack<>();
-        Stack<String> resStack = new Stack<>();
+        Stack<StringBuilder> resStack = new Stack<>();
         int idx = 0;
         while (idx < s.length()) {
             if (Character.isDigit(s.charAt(idx))) {
@@ -55,7 +55,7 @@ class Solution2 {
             }
             else if (s.charAt(idx) == '[') {
                 resStack.push(res);
-                res = "";
+                res = new StringBuilder();
                 idx++;
             }
             else if (s.charAt(idx) == ']') {
@@ -64,13 +64,13 @@ class Solution2 {
                 for (int i = 0; i < repeatTimes; i++) {
                     temp.append(res);
                 }
-                res = temp.toString();
+                res = temp;
                 idx++;
             }
             else {
-                res += s.charAt(idx++);
+                res.append(s.charAt(idx++));
             }
         }
-        return res;
+        return res.toString();
     }
 }
