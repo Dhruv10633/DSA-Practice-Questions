@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/sum-of-all-odd-length-subarrays/description/
+// https://leetcode.com/problems/sum-of-all-odd-length-subarrays/description/
 package Arrays_Strings;
 
 public class Q21_Sum_of_all_odd_length_subarr {
