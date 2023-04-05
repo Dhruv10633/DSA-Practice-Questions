@@ -1,7 +1,6 @@
 //https://hack.codingblocks.com/app/contests/3830/2330/problem
 package Binary_Trees;
 
-
 import java.util.*;
 class Main {
     private static class Node{

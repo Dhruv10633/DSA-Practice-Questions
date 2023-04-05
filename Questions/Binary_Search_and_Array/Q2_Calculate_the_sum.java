@@ -1,5 +1,5 @@
-package Binary_Search_and_Array;
 //https://hack.codingblocks.com/app/contests/3681/61/problem
+package Binary_Search_and_Array;
 
 import java.util.*;
 
@@ -40,5 +40,7 @@ public class Q2_Calculate_the_sum{
             sum+=arr[i];
         }
         System.out.println(sum);
+
+        sc.close();
     }
 }

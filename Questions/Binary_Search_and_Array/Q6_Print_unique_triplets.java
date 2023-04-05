@@ -48,5 +48,6 @@ public class Q6_Print_unique_triplets {
 
         int tar=sc.nextInt();
         triplets(arr, tar);
+        sc.close();
     }
 }

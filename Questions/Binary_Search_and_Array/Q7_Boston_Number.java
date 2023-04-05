@@ -47,5 +47,6 @@ public class Q7_Boston_Number {
         int n=sc.nextInt();
 
         Boston(n);
+        sc.close();
     }
 }

@@ -4,7 +4,6 @@ import java.util.*;
 public class Q5_Book_Allocation_prob {
     
     public static Boolean isPoss(int[]arr,int mid,int nos) {
-        //1st cow at 0
         int pages=0;
         int studs=1;
         for(int i=0;i<arr.length;i++){
@@ -62,5 +61,6 @@ public class Q5_Book_Allocation_prob {
 
             book_alloc(arr, nob,nos);
         }
+        sc.close();
     }
 }

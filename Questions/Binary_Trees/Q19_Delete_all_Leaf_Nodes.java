@@ -4,7 +4,7 @@
 //https://leetcode.com/problems/delete-leaves-with-a-given-value/
 package Binary_Trees;
 
-public class Q19_Delete_all_Leaf_Nodes {
+class Solution{
     class Node{
         int data;
         Node left,right;

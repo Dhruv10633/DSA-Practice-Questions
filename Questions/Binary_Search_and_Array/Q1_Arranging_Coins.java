@@ -1,5 +1,5 @@
-package Binary_Search_and_Array;
 // https://leetcode.com/problems/arranging-coins/
+package Binary_Search_and_Array;
 
 // import java.util.*;
 
