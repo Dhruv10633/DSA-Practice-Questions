@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/coin-change/
-package Questions.DP;
+package DP;
 import java.util.*;
 
 class Solution {
