@@ -9,12 +9,13 @@ which keeps a track of all the nums popped
 
 class SmallestInfiniteSet {
     Set<Integer> removed;
+    int curr;
     public SmallestInfiniteSet() {
         removed = new HashSet<>();
+        curr = 1;
     }
     
     public int popSmallest() {
-        int curr=1;
         while(removed.contains(curr)){
             curr++;
         }
@@ -24,6 +25,7 @@ class SmallestInfiniteSet {
     
     public void addBack(int num) {
         if(removed.contains(num))removed.remove(num);
+        if(curr>num) curr = num;
     }
 }
 
